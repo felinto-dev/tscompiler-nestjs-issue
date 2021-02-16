@@ -1,0 +1,21 @@
+{
+  "moduleDirectories": [
+    "node_modules",
+    "src"
+  ],
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "modulePathIgnorePatterns": ["<rootDir>/dist"],
+  "rootDir": "..",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "globals": {
+    "ts-jest": {
+      "astTransformers": {
+        "before": ["<rootDir>/test/ast.ts"]
+      }
+    }
+  }
+}
